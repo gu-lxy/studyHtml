@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>转换</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/*
+			 * 类型转换：
+				 * 显示转换：
+				 * 	Number()
+				 * 	String()
+				 * 	Boolean()
+				 * 	parseInt()
+				 * 	parseFloat()
+				 * 
+				 *隐式转换：
+				 * 	代码中隐含着的转换
+			 */
+			var res = 2  * '3';// number * string--->number * number
+			console.log(res);
+			
+			var res2 = 100 * true; // number * boolean  -->number * number
+			console.log(res2);
+			
+			var res3 = 100 * 'hello';
+			console.log(res3); //NaN
+			
+			
+			/*
+			 * 练习1
+			 * 
+			 * 打印结果：
+			 * 	Number('3.1415926')
+			 * 	parseInt('3.1415926')
+			 * 	Boolean(0)
+			 * 	
+			 * 
+			 * 计算：
+			 * 	var x = 3;
+			 *  var y = '2';
+			 * 	var res = x + y;
+			 *  var res2 = true * false;
+			 */
+		</script>
+	</body>
+</html>

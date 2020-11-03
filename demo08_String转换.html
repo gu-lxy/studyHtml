@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>String转换</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/*
+			 * String(),将其他的类型转为string类型
+			 */
+			///1.null-->string
+			var a1 = null;
+			console.log(a1); // null
+			console.log( typeof a1); //object
+			
+			var s1 = String(a1); // a1-->string
+			console.log(s1); //'null'
+			console.log(typeof s1);//string
+			
+			//2.undefined
+			console.log(String(undefined)); //'undefined'
+			
+			//3.boolean-->string
+			
+			var b1= true;
+			var b2= false;
+			var s2 = String(b1);
+			var s3 = String(b2);
+			console.log(b1);
+			console.log(b2);
+			console.log(s2);
+			console.log(s3);
+			
+			console.log(typeof b1);
+			console.log(typeof b2);
+			console.log(typeof s2);
+			console.log(typeof s3);
+			
+		</script>
+	</body>
+</html>

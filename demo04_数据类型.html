@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>数据类型</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/*
+			 * js的数据类型：
+			 * 1.number，数值
+			 * 		整数：int类型
+			 * 		浮点数：float类型
+			 * 
+			 * 2.string,一个字符序列
+			 * 		使用引号引起来的内容
+			 * 		'',"",
+			 * 
+			 * 3.boolean，布尔类型
+			 * 		值，只有2个。
+			 * 		true：真的，对的，1
+			 * 		false：假的，错的，0
+			 * 
+			 * 4.object,对象
+			 * 	Date，Array。。。
+			 * 
+			 * 5.undefined：未定义的
+			 * 	变量没有被定义，直接使用了
+			 * 
+			 * 6.null,空
+			 * 
+			 * 	null，定义了，但是没值
+			 * 	undefined，没有定义
+			 * 
+			 * 特殊的类型
+			 * 
+			 */
+			//1.定义number类型的变量
+			var num1 = 100; //number，整数
+			var num2 = 3.14; //number，浮点
+			var num3 = -200; //number，
+			console.log(num1); // 100
+			console.log(num2); // 3.14
+			console.log(num3);
+			
+			
+			var name1 = '王二狗'; //字符串
+//			var name2 = 王二狗; // 没有引号的王二狗，被认为是变量了
+
+			var str = 'hello world today is ';
+			console.log(str);
+			
+			//+，遇到字符串类型，起链接的作用
+			var str2 = name1 + num1; //name1和num1相加，赋值给str2变量
+			console.log(str2); // '王二狗100'
+			
+			/*
+			 * '100'，就是字符串string
+			 * 100，就是数值number
+			 * 
+			 * typeof，用于判断变量的数据类型
+			 */
+			var a1 = 100;
+			var a2 = '100';
+			console.log(a1);//?
+			console.log(a2);//?
+			
+			console.log(typeof num1); //number
+			console.log(typeof num2); // number
+			
+			console.log(typeof name1); //string
+			
+			console.log(typeof a1); //number
+			console.log(typeof a2); //string
+			
+			
+			//3.定义boolean类型的变量
+			var b1 = true;
+			var b2 = false;
+			console.log(b1);
+			console.log(b2);
+			console.log(typeof b1); //boolean
+			console.log(typeof b2); //boolean
+			
+			
+			var res = num1 < num2 ;//true;  num1 :100 ,num2 :3.14
+			console.log(res); //false	
+			
+			//5.undefined,未定义的
+			var num4 = undefined;
+			console.log(num4);
+//			console.log(num5);
+			
+			//6.null，空
+			var num6 = null;
+			console.log(num6);
+			
+		</script>
+	</body>
+</html>

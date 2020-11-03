@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>js的使用方式</title>
+		<script type="text/javascript" src="js/my1.js">
+			//js代码,不能执行，引入外部文件的script标签中，不能再执行内部的js代码
+			console.log('hello world') //此行代码不执行
+		</script>
+	</head>
+	<body>
+	<!--
+		1.行内引入方式：直接写在标签上的js
+		
+		2.内部引入方式：script标签里
+		
+		3.外部引入方式：外部的js文件
+			<script type="text/javascript" src="js/my1.js"></script>   js
+			<link type="text/css" href="css/xx.css">   css
+				
+				
+		注释：解释说明程序
+		
+	-->
+		<button onclick="alert('点我啊');">按钮</button>
+		<button onclick="test1();">按钮2</button>
+		
+	</body>
+	<script>
+	
+//		alert('我也弹框');
+	</script>
+</html>
